@@ -32,5 +32,5 @@ GIF created with [Recordit](https://recordit.co).
 http://g.recordit.co/KeWK6HM4hb.gif
 
 ## Notes
-Went rather somoothly compared to other projects
-Had issues with the side of Tweet Cells, but resolved it by adding a bottem constraint 
+Went rather smoothly compared to other projects.
+Had issues with the side of Tweet Cells, but resolved it by adding a bottom constraint.
