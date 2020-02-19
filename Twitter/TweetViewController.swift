@@ -13,9 +13,21 @@ class TweetViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tweetTextView.becomeFirstResponder()
+      //  tweetTextView.insertTextPlaceholder(string: "What's happening?")
+//        tweetTextView.text = "What's happening?"
+//        tweetTextView.textColor = UIColor.lightGray
 
         // Do any additional setup after loading the view.
     }
+    
+    
+ /*   @IBAction func textViewDidBeginEditing(_ sender: Any) {
+        if tweetTextView.textColor == UIColor.lightGray {
+            tweetTextView.text = nil
+            tweetTextView.textColor = UIColor.black
+        }
+    } */
+    
     
     @IBOutlet weak var tweetTextView: UITextView!
     
