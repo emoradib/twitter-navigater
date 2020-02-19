@@ -22,8 +22,11 @@ class HomeTableViewController: UITableViewController {
         tableView.refreshControl = myRefreshControl
     }
     
-    
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.loadTweets()
+        
+    }
     
     @objc func loadTweets() {
         numberOfTweet = 20
@@ -90,6 +93,9 @@ class HomeTableViewController: UITableViewController {
             cell.prfileImageView.image = UIImage(data: imageData)
         }
         
+        cell.setFavorite( isFavorited: tweetArray[indexPath.row]["favorited"] as! Bool)
+        
+        cell.tweetId = tweetArray[indexPath.row]["id"] as! Int
         
         
         return cell
